@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.instagram-phone img {
+    max-width: 580px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    min-height: 580px;
+}
+
+.login>* {
+    margin-top: 10px;
+}
+
+.login-sigin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: rgb(212, 212, 212) solid 1px;
+    background-color: white;
+    min-height: 340px;
+    gap: 20px;
+}
+
+.instagram-logo {
+    width: 150px;
+}
+
+.profile-picture {
+    width: 90px;
+    border-radius: 50%;
+}
+
+
+.button-continue {
+    height: 30px;
+    width: 250px;
+    background:
+        rgba(0, 149, 246, 1);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.remove-account {
+    margin: 0;
+    color: rgba(0, 149, 246, 1);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-notyou {
+    border: rgb(212, 212, 212) solid 1px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+}
+
+.notyou-text {
+    margin-bottom: 0;
+    color: rgb(142, 142, 142);
+}
+
+.change-create {
+    margin-top: 2px;
+    color: rgb(142, 142, 142);
+}
+
+.change-create span {
+    color: rgba(0, 149, 246, 1);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.login-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.login-apps img {
+    width: 136px;
+    cursor: pointer;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    flex-wrap: wrap;
+    color: rgb(142, 142, 142);
+}
+.info-container p{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 840px){
+    .instagram-phone{
+        display: none;
+    }
+    .info-container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width:410px){
+    .login-notyou{
+        background: none;
+        border: none;
+    }
+    .login-sigin{
+        background: none;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .login-apps-download{
+        display: flex;
+        flex-direction: column;
+    }
+}
